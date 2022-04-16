@@ -29,5 +29,5 @@ for i in range(1, 101):
     number = str(i)
     if number in procent:
         print(number, procent[number])
-    elif number[-1] in procent:
+    else:
         print(number, procent[number[-1]])
