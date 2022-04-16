@@ -25,11 +25,9 @@ procent = {
     '13': 'процентов',
     '14': 'процентов',
     }
-while True:
-    number = input('Введите количество процентов: ')
+for i in range(1, 101):
+    number = str(i)
     if number in procent:
         print(number, procent[number])
     elif number[-1] in procent:
         print(number, procent[number[-1]])
-    else:
-        print('Ошибка ввода процентов!') # проверяем что введено какое-то число (без проверки принаджлености к интервалу 1-100)
