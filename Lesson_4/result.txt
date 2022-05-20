@@ -1,0 +1,56 @@
+>pip list >> result.txt
+
+Package            Version
+------------------ ---------
+certifi            2021.10.8
+charset-normalizer 2.0.12
+idna               3.3
+pip                22.0.4
+requests           2.27.1
+setuptools         58.1.0
+urllib3            1.26.9
+
+>pip install pillow >> result.txt
+
+Collecting pillow
+  Downloading Pillow-9.1.0-cp310-cp310-win_amd64.whl (3.3 MB)
+     ---------------------------------------- 3.3/3.3 MB 442.2 kB/s eta 0:00:00
+Installing collected packages: pillow
+Successfully installed pillow-9.1.0
+
+>pip list >> result.txt
+
+Package            Version
+------------------ ---------
+certifi            2021.10.8
+charset-normalizer 2.0.12
+idna               3.3
+Pillow             9.1.0
+pip                22.0.4
+requests           2.27.1
+setuptools         58.1.0
+urllib3            1.26.9
+
+>python -m venv virt
+>cd virt
+>cd scripts
+>activate.bat
+>pip install pillow==9.0.0
+
+Collecting pillow==9.0.0
+  Downloading Pillow-9.0.0-cp310-cp310-win_amd64.whl (3.2 MB)
+     ---------------------------------------- 3.2/3.2 MB 1.1 MB/s eta 0:00:00
+Installing collected packages: pillow
+Successfully installed pillow-9.0.0
+
+>pip list
+Package    Version
+---------- -------
+Pillow     9.0.0
+pip        22.0.4
+setuptools 58.1.0
+
+(virt) C:\Users\User\virt\Scripts>deactivate.bat
+
+
+

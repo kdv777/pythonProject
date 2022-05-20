@@ -1,0 +1,27 @@
+user0_name@domenname.ru           {'username': 'user0_name', 'domain': 'domenname.ru'}
+user1'name@domenname.ru           {'username': "user1'name", 'domain': 'domenname.ru'}
+user2.name@domenname.ru           {'username': 'user2.name', 'domain': 'domenname.ru'}
+user3+name@domenname.ru           {'username': 'user3+name', 'domain': 'domenname.ru'}
+user4-name@domenname.ru           {'username': 'user4-name', 'domain': 'domenname.ru'}
+user5=name@domenname.ru           Error
+user6*name@domenname.ru           Error
+user7&name@domenname.ru           Error
+user8^name@domenname.ru           Error
+user9%name@domenname.ru           Error
+user10$name@domenname.ru          Error
+user11#name@domenname.ru          Error
+user12_name@domenna.me.ru         {'username': 'user12_name', 'domain': 'domenna.me.ru'}
+user13_name@domennameru           Error
+user14_name@domen-name.ru         {'username': 'user14_name', 'domain': 'domen-name.ru'}
+user16_name@domen+name.ru         Error
+user17_name@domen=name.ru         Error
+user18_name@domen)name.ru         Error
+user19_name@domen*name.ru         Error
+user20_name@domen/name.ru         Error
+user21_name@domen&name.ru         Error
+user22_name@domen%name.ru         Error
+Юзер23_name@domenname.ru          Error
+user24_name@доменname.ru          Error
+user25_name@domen,name.ru         Error
+user26_name@domen<name.ru         Error
+user27>name@domenname.ru          Error
