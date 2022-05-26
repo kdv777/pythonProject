@@ -18,40 +18,33 @@
 #
 # Для реализации задержек времени можно воспользоваться функцией sleep пакета time
 # Циклическое переключение просто реализовать с помощью cycle пакета itertools
-# Усложнение:
-#
-# Тайминги передаются при создании экземпляра светофора в виде трех чисел.
-# Внутри конструктора их надо соединить в единую структуру с цветами, так, чтобы было максимально понятно и лаконично.
-# Ограничение на количество итераций в методе running убрать. Прерывание работы светофора реализовать через нажатие Crtl-C
-# (или stop в IDE) в процессе выполнения. Найти какое исключение при этом возникает. Обработать его и завершить программу
-# с выводом диагностического сообщения.
 
 import time
 from itertools import cycle
 
-
 class TrafficLight:
 
-    __color = 'off'
+    __color ='off'
     colors = ['red', 'yellow', 'green', 'yellow']
 
-    def __init__(self, duration=[7, 2, 5]):
+    def __init__(self, duration = [7, 2, 5, 2]):
         self.duration = duration
-        self.duration.append(self.duration[1])
-        self.color_dur = list(zip(self.colors, self.duration))
+
 
     def state(self, __color):
-        str_color = self.__color[0]
-        return str_color
-
-    def running(self):
-        iter_color = cycle(self.color_dur)
-        for t in range(6):  # Один цикл прохода = range(3), далее + 2.
-            self.__color = next(iter_color)
-            print(TrafficLight.state(self, self.__color[0]))
-            time.sleep(self.__color[1])
+        # print(self.__color)
         return self.__color
 
 
-trafficLight1 = TrafficLight([1, 2, 3])
-trafficLight1.running()
+    def running(self, __color):
+        i = cycle(self.colors)
+        j = cycle(self.duration)
+        for t in range(6):   # один цикл прохода = range(3)
+            self.__color = next(i)
+            print(TrafficLight.state(self, __color))
+            time.sleep(next(j))
+        return self.__color
+
+
+trafficLight1 = TrafficLight()
+trafficLight1.running(" ")
