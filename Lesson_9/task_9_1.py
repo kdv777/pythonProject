@@ -53,5 +53,5 @@ class TrafficLight:
         return self.__color
 
 
-trafficLight1 = TrafficLight([1, 2, 3])
+trafficLight1 = TrafficLight([7, 2, 4])
 trafficLight1.running()
